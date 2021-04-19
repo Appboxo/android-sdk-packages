@@ -20,7 +20,6 @@ Add this in your root `build.gradle` file (**not** your module `build.gradle` fi
 ```gradle
 allprojects {
     repositories {
-        maven { url "https://jitpack.io" }
         maven {
             url "https://maven.pkg.github.com/Appboxo/android-sdk-packages"
             credentials {

@@ -11,7 +11,7 @@ Please see our [sample Android app](https://github.com/Appboxo/android-sample-ho
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:sdk:1.3.40'
+    implementation 'com.appboxo:miniapp-sdk:1.3.40'
 }
 ```
 

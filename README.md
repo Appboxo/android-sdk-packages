@@ -4,9 +4,9 @@
 
 Please see our [sample Android app](https://github.com/Appboxo/android-sample-hostapp) to learn more.
 
-1. Install AndroidStudio 3.0 or later.
-2. Make sure that your project meets the minimum requirement of SDK 21
-3. Add the below code to your app `build.gradle` file (not your root build.gradle file).
+* Make sure that your project meets the minimum requirement of SDK 21
+
+Add the below code to your app `build.gradle` file (not your root build.gradle file).
 
 
 ```gradle
@@ -30,7 +30,7 @@ allprojects {
     }
 }
 ```
-4. Init Appboxo SDK in your Application class.
+Init Appboxo SDK in your Application class.
 
 ```kotlin
 // Kotlin
@@ -79,35 +79,13 @@ public class MyApplication extends Application {
 }
 ```
 
-5. The Appboxo Sdk uses GoogleMaps' SDK in Miniapps. In `AndroidManifest.xml`, add the following element as a child of the `<application>` element, by inserting it just before the closing `</application>` tag:
-```xml
-<meta-data
-  android:name="com.google.android.geo.API_KEY"
-  android:value="YOUR_API_KEY" />
-```
-For more information, see https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-6. To open miniapps, write in your Activity:
+To open miniapps, write in your Activity:
 
 ```kotlin
 // Kotlin
 
 val miniapp = Appboxo.getMiniapp(appId)
 miniapp.open(context)
-```
-
-```java
-// Java
-
-Miniapp miniapp = Appboxo.INSTANCE.getMiniapp(appId).setAuthPayload(authPayload)
-miniapp.open(context);
-```
-
-to transfer your data to miniapp use the following method with `data`
-```kotlin
-// Kotlin
-Appboxo.getMiniapp(appId)
-        .setData(data)
 ```
 
 ### Miniapp's lifecycle events:

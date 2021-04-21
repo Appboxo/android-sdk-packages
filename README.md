@@ -11,7 +11,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.3.40'
+    implementation 'com.appboxo:miniapp-sdk:1.3.41'
 }
 ```
 

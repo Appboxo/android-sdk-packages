@@ -11,7 +11,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.3.41'
+    implementation 'com.appboxo:miniapp-sdk:1.3.42'
 }
 ```
 
@@ -238,3 +238,16 @@ Appboxo.getMiniapp("MINIAPP_ID")
 ```
 
 To show/hide custom action menu item use `.showCustomActionMenuItem()` and `.hideCustomActionMenuItem()`
+
+### Get miniapp list
+```kotlin
+Appboxo.getMiniapps(object: Appboxo.MiniappListCallback{
+            override fun onFailure(e: Exception) {
+                ...
+            }
+
+            override fun onSuccess(miniapps: List<MiniappData>) {
+                ...
+            }
+        })
+```

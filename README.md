@@ -4,14 +4,14 @@
 
 Please see our [sample Android app](https://github.com/Appboxo/android-sample-hostapp) to learn more.
 
-* Make sure that your project meets the minimum requirement of SDK 21
+* minimum requirement of SDK 19 from version >1.3.44
 
 Add the below code to your app `build.gradle` file (not your root build.gradle file).
 
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.3.43'
+    implementation 'com.appboxo:miniapp-sdk:1.3.44'
 }
 ```
 

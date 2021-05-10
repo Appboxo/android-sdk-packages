@@ -217,6 +217,35 @@ Appboxo.getMiniapp("MINIAPP_ID")
     )
     .open(this)
 ```
+### Handle custom event from miniapp:
+
+```kotlin
+//kotlin
+
+miniApp.setCustomEventListener { miniAppActivity, miniApp, customEvent ->
+    //doSomething
+    customEvent.payload = mapOf("message" to "text",
+                                "id" to 123,
+                                "checked" to true)
+    miniApp.sendEvent(customEvent)
+}
+```
+
+```java
+//java
+
+miniApp.setCustomEventListener(new MiniApp.CustomEventListener() {
+    @Override
+    public void handle(@NotNull Activity miniAppActivity, @NotNull MiniApp miniApp, @NotNull CustomEvent customEvent) {
+        Map<String, Object> payload = new HashMap<>();
+        payload.put("message", "message");
+        payload.put("id", 123);
+        payload.put("checked", true);
+        customEvent.setPayload(payload);
+        miniApp.sendEvent(customEvent);
+    }
+});
+```
 
 ### Custom action menu item
 

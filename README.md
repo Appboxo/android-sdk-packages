@@ -6,6 +6,7 @@ Please see our [sample Android app](https://github.com/Appboxo/android-sample-ho
 
 ### MiniappSDK - Light version
 * minimum requirement of SDK 19 from version >1.3.44
+* minimum requirement of SDK 16 from version >1.4.0
 
 Add the below code to your app `build.gradle` file (not your root build.gradle file).
 
@@ -32,7 +33,7 @@ allprojects {
 ```
 
 ### MiniappSDK - Full version
-* minimum requirement of SDK 19 from version >1.3.44
+* minimum requirement of SDK 21
 
 Add the below code to your app `build.gradle` file (not your root build.gradle file).
 

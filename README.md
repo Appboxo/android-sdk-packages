@@ -4,10 +4,10 @@
 
 Please see our [sample Android app](https://github.com/Appboxo/android-sample-hostapp) to learn more.
 
+### MiniappSDK - Light version
 * minimum requirement of SDK 19 from version >1.3.44
 
 Add the below code to your app `build.gradle` file (not your root build.gradle file).
-
 
 ```gradle
 dependencies {
@@ -30,6 +30,35 @@ allprojects {
     }
 }
 ```
+
+### MiniappSDK - Full version
+* minimum requirement of SDK 19 from version >1.3.44
+
+Add the below code to your app `build.gradle` file (not your root build.gradle file).
+
+```gradle
+dependencies {
+    implementation 'com.appboxo:sdk:1.4.0'
+}
+```
+
+Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
+
+```gradle
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "https://maven.pkg.github.com/Appboxo/android-sdk-packages"
+            credentials {
+                username = "appboxoandroidsdk"
+                password = "\u0037\u0039\u0064\u0031\u0065\u0064\u0061\u0036\u0030\u0034\u0063\u0061\u0031\u0066\u0030\u0032\u0066\u0031\u0037\u0066\u0032\u0061\u0039\u0033\u0064\u0035\u0039\u0039\u0061\u0035\u0035\u0062\u0066\u0065\u0031\u0064\u0066\u0064\u0038\u0038"
+            }
+        }
+    }
+}
+```
+
 Init Appboxo SDK in your Application class.
 
 ```kotlin

@@ -234,7 +234,7 @@ miniApp.setCustomEventListener { miniAppActivity, miniApp, customEvent ->
 ```java
 //java
 
-miniApp.setCustomEventListener(new MiniApp.CustomEventListener() {
+miniApp.setCustomEventListener(new Miniapp.CustomEventListener() {
     @Override
     public void handle(@NotNull Activity miniAppActivity, @NotNull Miniapp miniapp, @NotNull CustomEvent customEvent) {
         Map<String, Object> payload = new HashMap<>();

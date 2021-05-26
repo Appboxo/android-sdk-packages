@@ -59,6 +59,8 @@ allprojects {
 }
 ```
 
+
+
 Init Appboxo SDK in your Application class.
 
 ```kotlin

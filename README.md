@@ -75,6 +75,8 @@ class MyApplication : Application() {
                 Config.Builder()
                     .setClientId("CLIENT_ID")
                     .multitaskMode(false) //by default 'true', each miniapp appears as a task in the Recents screen.
+                    .debug(BuildConfig.DEBUG) //by default 'false', enables webview debugging
+                    .sandboxMode(true) //by default 'false'
                     .build()
             )
             .setLogger(DefaultLogger(BuildConfig.DEBUG))
@@ -105,6 +107,8 @@ public class MyApplication extends Application {
                 .setConfig(new Config.Builder()
                         .setClientId("CLIENT_ID")
                         .multitaskMode(false) //by default 'true', each miniapp appears as a task in the Recents screen.
+                        .debug(BuildConfig.DEBUG) //by default 'false', enables webview debugging
+                        .sandboxMode(true) //by default 'false'
                         .build())
                 .setLogger(new DefaultLogger(BuildConfig.DEBUG));
     }
@@ -179,6 +183,14 @@ miniapp.setLifecycleListener(new BaseMiniapp.LifecycleListener() {
 
     }
 });
+```
+### Auth flow
+
+```kotlin
+miniapp.setAuthListener { appboxoActivity, miniapp ->
+    //get AuthCode from hostapp backend and send it to miniapp
+    miniapp.setAuthCode(authCode)
+}
 ```
 
 ### `logout` to clear mininapp data

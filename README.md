@@ -12,7 +12,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.4.0'
+    implementation 'com.appboxo:miniapp-sdk:1.4.2'
 }
 ```
 
@@ -39,7 +39,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:sdk:1.4.0'
+    implementation 'com.appboxo:sdk:1.4.2'
 }
 ```
 
@@ -131,24 +131,24 @@ Miniapp's lifecycle events help to track miniapps' activities like: `onLaunch`, 
 ```kotlin
 // Kotlin
 
-miniapp.setLifecycleListener(object : BaseMiniapp.LifecycleListener {
-    override fun onLaunch(miniapp: BaseMiniapp) {
+miniapp.setLifecycleListener(object : Miniapp.LifecycleListener {
+    override fun onLaunch(miniapp: Miniapp) {
         // Called when the miniapp will launch with Appboxo.open(...)
     }
 
-    override fun onResume(miniapp: BaseMiniapp) {
+    override fun onResume(miniapp: Miniapp) {
         // Called when the miniapp will start interacting with the user
     }
 
-    override fun onPause(miniapp: BaseMiniapp) {
+    override fun onPause(miniapp: Miniapp) {
         // Called when the miniapp loses foreground state
     }
 
-    override fun onClose(miniapp: BaseMiniapp) {
+    override fun onClose(miniapp: Miniapp) {
         // Called when clicked close button in miniapp or when destroyed miniapp activity
     }
 
-    override fun onError(miniapp: BaseMiniapp, message: String) {
+    override fun onError(miniapp: Miniapp, message: String) {
         // Called when miniapp fails to launch due to internet connection issues
     }
 })
@@ -157,29 +157,29 @@ miniapp.setLifecycleListener(object : BaseMiniapp.LifecycleListener {
 ```java
 //Java
 
-miniapp.setLifecycleListener(new BaseMiniapp.LifecycleListener() {
+miniapp.setLifecycleListener(new Miniapp.LifecycleListener() {
     @Override
-    public void onLaunch(@NotNull BaseMiniapp miniapp) {
+    public void onLaunch(@NotNull Miniapp miniapp) {
         //Called when the miniapp will launch with Appboxo.open(...)
     }
 
     @Override
-    public void onResume(@NotNull BaseMiniapp miniapp) {
+    public void onResume(@NotNull Miniapp miniapp) {
         //Called when the miniapp will start interacting with the user
     }
 
     @Override
-    public void onPause(@NotNull BaseMiniapp miniapp) {
+    public void onPause(@NotNull Miniapp miniapp) {
         //Called when the miniapp loses foreground state
     }
 
     @Override
-    public void onClose(@NotNull BaseMiniapp miniapp) {
+    public void onClose(@NotNull Miniapp miniapp) {
         //Called when clicked close button in miniapp or when destroyed miniapp activity
     }
 
     @Override
-    public void onError(@NotNull BaseMiniapp miniapp, @NotNull String message) {
+    public void onError(@NotNull Miniapp miniapp, @NotNull String message) {
 
     }
 });

@@ -12,7 +12,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.4.2'
+    implementation 'com.appboxo:miniapp-sdk:1.4.4'
 }
 ```
 
@@ -39,7 +39,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:sdk:1.4.2'
+    implementation 'com.appboxo:sdk:1.4.4'
 }
 ```
 

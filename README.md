@@ -12,7 +12,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.4.4'
+    implementation 'com.appboxo:miniapp-sdk:1.4.7'
 }
 ```
 
@@ -39,7 +39,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:sdk:1.4.4'
+    implementation 'com.appboxo:sdk:1.4.7'
 }
 ```
 
@@ -77,6 +77,7 @@ class MyApplication : Application() {
                     .multitaskMode(false) //by default 'true', each miniapp appears as a task in the Recents screen.
                     .debug(BuildConfig.DEBUG) //by default 'false', enables webview debugging
                     .sandboxMode(true) //by default 'false'
+                    .permissionsPage(false) // use it to hide "settings" from Miniapp menu, by default 'true'
                     .build()
             )
             .setLogger(DefaultLogger(BuildConfig.DEBUG))

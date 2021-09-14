@@ -12,7 +12,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:miniapp-sdk:1.4.7'
+    implementation 'com.appboxo:miniapp-sdk:1.4.9'
 }
 ```
 
@@ -39,7 +39,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:sdk:1.4.7'
+    implementation 'com.appboxo:sdk:1.4.9'
 }
 ```
 
@@ -152,6 +152,10 @@ miniapp.setLifecycleListener(object : Miniapp.LifecycleListener {
     override fun onError(miniapp: Miniapp, message: String) {
         // Called when miniapp fails to launch due to internet connection issues
     }
+    
+    override fun onUserInteraction(miniapp: Miniapp) {
+        // Called whenever touch event is dispatched to the miniapp activity.
+    }
 })
 ```
 
@@ -181,6 +185,11 @@ miniapp.setLifecycleListener(new Miniapp.LifecycleListener() {
 
     @Override
     public void onError(@NotNull Miniapp miniapp, @NotNull String message) {
+
+    }
+    
+    @Override
+    public void onUserInteraction(@NotNull Miniapp miniapp) {
 
     }
 });

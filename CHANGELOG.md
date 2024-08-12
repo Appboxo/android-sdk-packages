@@ -1,112 +1,112 @@
 # Changelog
 
-##[1.5.9]
+## [1.5.9]
 ### Added
 - Sandbox mode
 
-##[1.5.8]
+## [1.5.8]
 ### Changed
 - Network timeouts
 
-##[1.5.7]
+## [1.5.7]
 ### Fixed
 - close miniapp page on multitask mode
 
-##[1.5.6]
+## [1.5.6]
 ### Added
 - consent t&c, privacy text
 ### Changed
 - consent button color from hostapp colors
 
-##[1.5.4]
+## [1.5.4]
 ### Changed
 - updated Sentry endpoint
 
-##[1.5.3]
+## [1.5.3]
 ### Fixed
 - add listeners to minapp opened from miniapp 
 
-##[1.5.2]
+## [1.5.2]
 ### Changed
 - system info phone model to hardware codename
 
-##[1.5.1]
+## [1.5.1]
 ### Added
 - enableSplash flag to miniapp configs
 ### Fixed
 - fix close miniapp logic
 
-##[1.5.0]
+## [1.5.0]
 ### Added
 - Consent Management
 ### Changed
 - Increase miniapp menu button size
 - Changed icons
 
-##[1.4.14]
+## [1.4.14]
 ### Added
 - fullscreen auth page
 - url_suffix
 ### Changed
 - default design for bottomsheet dialogs
 
-##[1.4.13] - 2021-12-09
+## [1.4.13] - 2021-12-09
 ### Added
 - clear cache on reload
 - disable forceDarkAllowed
 
-##[1.4.12] - 2021-11-15
+## [1.4.12] - 2021-11-15
 ### Added
 - hide clear cache functionality
 
-##[1.4.11] - 2021-11-10
+## [1.4.11] - 2021-11-10
 ### Changed
 - appboxo logo
 
-##[1.4.10] - 2021-09-21
+## [1.4.10] - 2021-09-21
 ### Added
 - remove the word "miniapp" from menu items
 - clear cookies on clearCache
 
-##[1.4.9] - 2021-09-14
+## [1.4.9] - 2021-09-14
 ### Added
 - onUserInteraction method to MiniappLifecycle
 - clear localStorage on clearCache
 
-##[1.4.8] - 2021-08-26
+## [1.4.8] - 2021-08-26
 ### Fixed
 - onActivityResult invoking from AppboxoActivity
 
-##[1.4.7] - 2021-08-06
+## [1.4.7] - 2021-08-06
 ### Added
 - permissionsPage flag to config
 ### Changed
 - settings page moved to core
 
-##[1.4.6] - 2021-07-30
+## [1.4.6] - 2021-07-30
 ### Fixed
 - isShopboxo flag moved to MiniappInfo
 - crash on login
 
-##[1.4.5] - 2021-07-27
+## [1.4.5] - 2021-07-27
 ### Added
 - onGeolocationPermissionsShowPrompt implementation
 
-##[1.4.4] - 2021-07-19
+## [1.4.4] - 2021-07-19
 ### Added
 - Pull miniapp settings for active miniapp from platform every 30seconds and invalidate cache if it has changed
 
-##[1.4.3] - 2021-06-30
+## [1.4.3] - 2021-06-30
 ### Added
 - custom url loading handler
 - isShopboxo flag
 
-##[1.4.2] - 2021-06-18
+## [1.4.2] - 2021-06-18
 ### Changed
 - moves Payment to core module
 - renamed BaseMiniapp to Miniapp
 
-##[1.4.1] - 2021-06-15
+## [1.4.1] - 2021-06-15
 ### Added
 - added debug mode flag to Config for debugging webview
 - added new auth flow

@@ -4,7 +4,7 @@
 ### Added
 - Sandbox mode
 
-- ##[1.5.8]
+##[1.5.8]
 ### Changed
 - Network timeouts
 

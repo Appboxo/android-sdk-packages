@@ -8,7 +8,7 @@ Add the below code to your app `build.gradle` file (not your root build.gradle f
 
 ```gradle
 dependencies {
-    implementation 'com.appboxo:sdk:1.4.19'
+    implementation 'com.appboxo:sdk:x.x.x'
 }
 ```
 

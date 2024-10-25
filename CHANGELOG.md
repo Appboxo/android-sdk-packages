@@ -1,4 +1,96 @@
 # Changelog
+## [1.11.0] - 2024-10-25
+### Added
+- no internet connection page
+- open_miniapp_duration to GetInitData
+
+## [1.10.0] - 2024-10-21
+### Added
+- add maintenance mode
+
+## [1.9.0] - 2024-10-18
+### Added
+- add support eSim flag to AppBoxoWebAppGetSystemInfo
+
+## [1.8.3] - 2024-10-18
+### Added
+- reload after clear cache
+
+## [1.8.2] - 2024-10-16
+### Changed
+- change miniapp settings expiration time to 60sec by default
+
+## [1.8.1] - 2024-10-11
+### Added
+- add progressbar to share file
+### Changed
+- more button icon for style_2 
+
+## [1.8.0] - 2024-10-10
+### Added
+- add config fields to OpenMiniapp from miniapp
+- add new menu style (style_2)
+
+## [1.7.0] - 2024-09-27
+### Added
+- add new menu style 
+
+## [1.6.0] - 2024-09-25
+### Added
+- add showAboutPage flag to config 
+- add visible option to AppBoxoWebAppSetActionButton event 
+### Fixed
+- open miniapp after closing miniapp
+
+## [1.5.21] - 2024-09-24
+### Fixed
+- system device hardware string
+
+## [1.5.20] - 2024-09-23
+### Fixed
+- remove http client cache
+
+## [1.5.19] - 2024-09-20
+### Added
+- AppBoxoWebAppShare to share file
+
+## [1.5.18] - 2024-09-13
+### Added
+- saveState flag to miniapp config 
+
+## [1.5.17] - 2024-09-04
+### Fixed
+- Fix custom and payment event payload object's serialization
+
+## [1.5.16] - 2024-08-23
+### Changed
+- Don't clear cache and localStorage on "Reload"
+
+## [1.5.15] - 2024-08-22
+### Added
+- AppBoxoWebAppDownloadFile to download file
+
+## [1.5.14] - 2024-08-22
+### Added
+- AppBoxoWebAppSetStatusBarColor to change status bar color
+
+## [1.5.13] - 2024-08-21
+### Added
+- clear cache and tokens when disabling User Data Sharing
+
+## [1.5.12] - 2024-08-20
+### Added
+- add language field to config to pass to miniapp
+- add file download implementation
+- save state when user close the miniapp
+
+## [1.5.11]
+### Added
+- set default empty video poster 
+
+## [1.5.10]
+### Fixed
+- remove jcenter dependencies
 
 ## [1.5.9]
 ### Added

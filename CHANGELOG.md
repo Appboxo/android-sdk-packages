@@ -1,4 +1,9 @@
 # Changelog
+## [1.11.1] - 2024-11-01
+### Fixed
+- fix crash on loading dialog
+- show internet error only for main frame
+  
 ## [1.11.0] - 2024-10-25
 ### Added
 - no internet connection page

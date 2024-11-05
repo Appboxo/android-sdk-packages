@@ -1,4 +1,8 @@
 # Changelog
+## [1.11.2] - 2024-11-05
+### Changed 
+- change action buttons color for dark theme
+
 ## [1.11.1] - 2024-11-01
 ### Fixed
 - fix crash on loading dialog

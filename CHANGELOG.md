@@ -1,4 +1,8 @@
 # Changelog
+## [1.12.0] - 2024-11-18
+### Added
+- new action button style (style_3)
+  
 ## [1.11.2] - 2024-11-05
 ### Changed 
 - change action buttons color for dark theme

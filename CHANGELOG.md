@@ -1,4 +1,8 @@
 # Changelog
+## [1.13.0] - 2024-12-16
+### Added
+- LTR/RTL support by language
+  
 ## [1.12.0] - 2024-11-18
 ### Added
 - new action button style (style_3)

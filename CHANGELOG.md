@@ -1,12 +1,20 @@
 # Changelog
+## [1.14.0] - 2025-01-07
+### Fixed
+- Fix problem with cookies and storage on logout 
+
 ## [1.13.0] - 2024-12-16
 ### Added
 - LTR/RTL support by language
-  
+
+## [1.12.1] - 2024-11-21
+### Fixed
+- fix open_miniapp_duration on reload
+
 ## [1.12.0] - 2024-11-18
 ### Added
 - new action button style (style_3)
-  
+
 ## [1.11.2] - 2024-11-05
 ### Changed 
 - change action buttons color for dark theme
@@ -15,7 +23,7 @@
 ### Fixed
 - fix crash on loading dialog
 - show internet error only for main frame
-  
+
 ## [1.11.0] - 2024-10-25
 ### Added
 - no internet connection page

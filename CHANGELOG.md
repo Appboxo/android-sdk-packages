@@ -1,4 +1,8 @@
 # Changelog
+## [1.15.0] - 2025-02-14
+### Added
+- Add list of user fields to consent screen
+  
 ## [1.14.0] - 2025-01-07
 ### Fixed
 - Fix problem with cookies and storage on logout 

@@ -1,4 +1,10 @@
 # Changelog
+## [1.16.0] - 2025-02-17
+### Fixed
+- Screen move up with keyboard 
+- Consent screen for landscape mode
+- fix open location 
+
 ## [1.15.0] - 2025-02-14
 ### Added
 - Add list of user fields to consent screen

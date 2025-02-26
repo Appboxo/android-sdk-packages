@@ -1,4 +1,11 @@
 # Changelog
+## [1.17.0] - 2025-02-26
+### Added
+- add camera to file picker if mime type is image/* 
+### Fixed
+- fix AppBoxoWebAppStorageGet result
+- update text on qr scanner 
+
 ## [1.16.0] - 2025-02-17
 ### Fixed
 - Screen move up with keyboard 

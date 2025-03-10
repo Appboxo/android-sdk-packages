@@ -1,4 +1,9 @@
 # Changelog
+## [1.18.0] - 2025-03-10
+### Added
+- add close button to error page
+- update some ui elements
+  
 ## [1.17.0] - 2025-02-26
 ### Added
 - add camera to file picker if mime type is image/* 

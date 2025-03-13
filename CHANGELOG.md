@@ -1,4 +1,8 @@
 # Changelog
+## [1.19.0] - 2025-03-13
+### Added
+- add events for native pullToRefresh
+  
 ## [1.18.0] - 2025-03-10
 ### Added
 - add close button to error page

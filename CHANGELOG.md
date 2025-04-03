@@ -1,4 +1,18 @@
 # Changelog
+## [1.21.0] - 2025-04-03
+- add launch UI animations
+- change loader animation
+- improve session analytics
+- show error message with code only for sandbox 
+
+## [1.20.1] - 2025-03-25
+### Fixed
+- fix conflicting with other libs
+
+## [1.20.0] - 2025-03-24
+### Added
+- add page animation support
+
 ## [1.19.0] - 2025-03-13
 ### Added
 - add events for native pullToRefresh
